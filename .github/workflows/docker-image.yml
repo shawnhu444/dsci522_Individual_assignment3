@@ -47,7 +47,7 @@ jobs:
         if: success()
         run: |
           sed -i "s|image:  shawnhu444/dsci522-individual-assignment3:.*|image:  shawnhu444/dsci522-individual-assignment3:${{ steps.meta.outputs.version }}|" docker-compose.yml
-
+          ## string fomating 
       - name: Commit and push updated docker-compose.yml
         if: success()
         run: |
